@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "Raleway4";
+    src: url(../fonts/Raleway-Regular.ttf);
+}
+@font-face {
+    font-family: "Raleway7";
+    src: url(../fonts/Raleway-Bold.ttf);
+}
+
+@mixin childCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin alignChildren($space) {
+    display: flex;
+    align-items: center;
+    justify-content: $space;
+}
+
+$font1: Raleway4, sans-serif;
+$font2: Raleway7, sans-serif;
+$blue1: #1e2c69;
+$blue2: #0c122c;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
